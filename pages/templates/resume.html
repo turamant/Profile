@@ -2,50 +2,10 @@
 {% load static %}
 
 {% block title %} Resume {% endblock %}
-
 {% block content %}
-<p>Resume Page</p>
-<div id="bio">
-    <img src="{% static 'img/lenin.jpg' %}" alt="myphoto" width="100" height="100"/>
-    <h3>Виктор Турамант</h3>
-<p>Люблю функциональный стиль, могу немного в ООП. Стараюсь писать в соответствии с
-    "The clean architecture.</p>
-    <p>Соблюдаю стандарт PEP8. В окружении использую arch, I3, vim, tmux.</p>
-    <p><a href="https://github.com/turamant"> Мои проекты </a></p>
-<p>Самостоятельно организую инфраструктуру приложения как код, настрою CI,
-    покрою тестами, упакую приложение в Docker.<a href="https://github.com/turamant/mySiteDocker">Django with Docker</a> </p>
-    <p>В прошлом сертифицированный специалист PMI c 3+ годами опыта управления промышленными проектами.</p>
-</div>
-<div id="stek">
-    <p><h3>Cтек технологий с примерами проектов:</h3></p>
-    <ul>
-        <li>Python</li>
-<li>Django, Django REST Framework <a href="https://github.com/turamant/my_todo">TaskManager</a>,
-    <a href="https://github.com/turamant/dj_plus_vue">Django + Vue.js </a></li>
-<li>Базовые знания парсинга сайтов, Requests, Bs4
-    (Page-loader (https://github.com/NONVME/Page-loader))</li>
-        <li>Sqlite3, PostgreSQL</li>
-        <li>CI (Github Action)</li>
-        <li>IaaS/PaaS (Heroku)</li>
-        <li>Docker, Docker-compose</li>
-        <li>Ansible</li>
-        <li>HTML/CSS, Bootstrap</li>
-        <li>Git</li>
-    </ul>
-</div>
-<div id="sector">
-    <p><h3>Отраслевые знания:</h3></p>
-    <ul>
-        <li>ООП, TDD</li>
-        <li>Управление проектами</li>
-        <li>Планирование проектов</li>
-    </ul>
-</div>
-<div id="title">
-    <p><h3>Мои проекты:</h3></p>
-</div>
+<h3>Мои проекты:</h3>
     <div id="project1">
-        <h2>Pageloader</h2> <a href="https://github.com/NONVME/Page-loader">- легковесный парсер веб-страниц.</a>
+        <h2>Pageloader</h2> <a href="https://github.com/turamant">- легковесный парсер веб-страниц.</a>
             <p>Помимо html страницы приложение скачивает картинки, стили и js.</p>
 <p>Разрабатывал по TDD. Для тестирования использовал моккинг http-запросов,
     отладка велась через логи.</p>
@@ -58,7 +18,7 @@
         </ul>
     </div>
     <div id="project2">
-        <h3>GenDiff </h3> <a href="https://github.com/NONVME/GenDiff">- приложение сравнивающее файлы json и yaml,</a>
+        <h3>GenDiff </h3> <a href="https://github.com/turamant">- приложение сравнивающее файлы json и yaml,</a>
         <p>выполнено в виде cli и библиотеки. За основу взят метод обхода в глубину,</p>
         <p>с помощью которого рекурсивно обходится древовиднаяструктура файлов.</p>
         <p>Стек технологий:</p>
@@ -70,7 +30,7 @@
         </ul>
     </div>
     <div id="project3">
-        <h3>TaskManager</h3> <a href="http://task-manager-nonvme.herokuapp.com/">- MVC веб приложение помогающее вести контроль за задачами.</a>
+        <h3>TaskManager</h3> <a href="https://github.com/turamant">- MVC веб приложение помогающее вести контроль за задачами.</a>
         <p>Preview on Heroku ().</p>
         <p>Стек технологий:</p>
         <ul>
@@ -89,6 +49,6 @@
         <h3>Моё резюме</h3>
         <a href="https://resume.creddle.io/resume/7nmrp57ynzv">Creddle</a>,
         <a href="https://www.linkedin.com/in/chashinefim/">linkedIn</a>,
-        <a href="https://github.com/NONVME">GitHub</a>,
+        <a href="https://github.com/turamant">GitHub</a>,
     </div>
 {% endblock content %}

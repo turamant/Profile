@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<p lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +11,44 @@
      </title>
 </head>
 <body>
-	<div id="app">
-		<header>
-            <div class="navbar navbar-default">
-                <div class="navbar-header">
-                    <h1>MySite</h1>
-                </div>
-            </div>
-        </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url '_base' %}">MySiteProfile</a>
     </div>
-    <h2>Главная страница сайта</h2>
-<div class="btn btn-success btn-lg">
-	<a href="{% url 'resume' %}"> Домашняя страница</a>
-</div>
-<div class="btn btn-success btn-lg">
-	<a href="{% url 'links' %}"> Ссылки на проекты</a>
-</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{% url 'resume' %}">Резюме<span class="sr-only">(current)</span></a></li>
+        <li><a href="{% url 'links' %}">Ссылки</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<h2>Виктор Турамант</h2>
+
+    <img src="{% static 'img/lenin.jpg' %}" alt="myphoto" width="100" height="100"/>
+    <h3>Виктор Турамант</h3>
+<p>Я ищу позицию backend-разработчика в стеке Python.</p>
+<h3>SKILLS</h3>
+<p><b>Basic skills:</b> Python, Django, REST APIs,Linux</p>
+<p><b>Industry knowledge:</b> OOP, SOLID, TDD, Project management, Project planning</p>
+<p><b>Tools and technologies:</b> Git, PostgreSQL, bootstrap, Sqlite3, HTML/CSS, CI (Github Action), IaaS/PaaS (Heroku), Ansible, Docker</p>
+<p><b>mail: tur1amant@gmail.com</b></p>
 
 {% block content %}
 {% endblock content %}
