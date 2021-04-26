@@ -1,0 +1,88 @@
+header {
+    padding: 10px 20px;
+    color:red;
+}
+
+body {
+    max-width: 1420px;
+    color:blue;
+    width: 100%; /* Ширина */
+    background: #fc0; /* Цвет фона */
+    padding: 20px; /* Поля */
+    -moz-box-sizing: border-box; /* Для Firefox */
+    -webkit-box-sizing: border-box; /* Для Safari и Chrome */
+    box-sizing: border-box; /* Для IE и Opera */
+}
+
+#bio {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#stek {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#sector {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#project1 {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#project2 {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#project3 {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#worktime {
+   margin: 20px;
+   padding: 10px 20px;
+}
+#resume {
+   margin: 20px;
+   padding: 10px 20px;
+}
+
+.wrap {
+    width: 50%; /* Ширина */
+   }
+.wrap div {
+    background: #fc0;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+   }
+
+#title {
+   margin: 20px;
+   padding: 10px 20px;
+}
+
+
+.cart {
+  padding: 20px 50px;
+}
+.boxes {
+  margin-top: 20px;
+}
+
+.verify {
+  margin-top: 20px;
+}
+
+.submit {
+  margin-top:20px;
+  float: right;
+}
+
+.pagecheckout {
+  padding: 20px 50px;
+}
+.description {
+  font-size: 150%;
+  margin-top:50px;
+}
