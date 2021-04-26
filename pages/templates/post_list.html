@@ -1,0 +1,8 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h3>Все посты:</h3>
+{% for post in posts %}
+<a href="{{ post.get_absolute_url }}"> <li>{{ post }}</li> </a>
+{% endfor %}
+{% endblock %}

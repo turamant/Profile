@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h3>Страница поста</h3>
+<ul>
+    <li><b>Заголовок:</b> {{ post.title }}</li>
+    <li><b>Текст:</b> {{ post.body }}</li>
+</ul>
+{% endblock %}
