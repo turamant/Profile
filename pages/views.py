@@ -10,3 +10,5 @@ def resume_view(request):
 
 def base_view(request):
     return render(request, '_base.html')
+
+
